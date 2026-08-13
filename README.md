@@ -13,6 +13,12 @@ Interactive visual explanations of system design concepts.
 05. [Netflix](questions/netflix.html)
 06. [Uber Nearby Drivers](questions/uber-nearby.html)
 07. [Web Search Engine](questions/google-search.html)
+08. [Payment System](questions/payment-system.html)
+09. [Content Delivery Network](questions/cdn.html)
+10. [Distributed Cache](questions/distributed-cache.html)
+11. [Notification System](questions/notification-system.html)
+12. [Rate Limiter](questions/rate-limiter.html)
+13. [Distributed Queue](questions/distributed-queue.html)
 
 Open `index.html` directly, or serve the folder with any static HTTP server.
 
@@ -52,10 +58,10 @@ All internal links and assets are relative, so lesson pages work under the `/Sys
 - `css/lesson.css` owns the original ML lesson, diagram, simulator, and metric patterns.
 - `css/detailed-question.css` owns the reusable detailed-question shell and component microscope.
 - `js/app.js` contains shared platform behavior.
-- `js/questions/question-data.js` is the structured content catalog for Questions 02–07.
+- `js/questions/question-data.js`, `question-data-more.js`, and `question-data-infra.js` are the structured content catalogs for Questions 02–13.
 - `js/questions/detailed-question.js` renders requirements, evolution, components, traces, failures, tradeoffs, and quizzes from that catalog.
 - `js/questions/ml-at-scale.js` contains the custom simulation-heavy behavior for Question 01.
 
 ## Adding future questions
 
-Copy one of the small detailed-question HTML shells, set its `data-question` slug, and add a matching entry to `question-data.js`. The shared renderer supplies requirements, scale estimates, architecture evolution, component-level explanations, hard-part deep dives, request traces, failure modes, final tradeoffs, interview prompts, and quizzes. Add the numbered entry to the homepage without changing existing URLs.
+Copy one of the small detailed-question HTML shells, set its `data-question` slug, and add a matching entry to one of the question data catalogs. The shared renderer supplies requirements, scale estimates, architecture evolution, component-level explanations, hard-part deep dives, request traces, failure modes, final tradeoffs, interview prompts, and quizzes. Add the numbered entry to the homepage without changing existing URLs.
