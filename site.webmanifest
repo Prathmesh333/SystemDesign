@@ -1,0 +1,10 @@
+{
+  "name": "SystemDesign",
+  "short_name": "SystemDesign",
+  "description": "Interactive visual explanations of how production systems scale.",
+  "start_url": "/SystemDesign/",
+  "scope": "/SystemDesign/",
+  "display": "standalone",
+  "background_color": "#080b0d",
+  "theme_color": "#080b0d"
+}

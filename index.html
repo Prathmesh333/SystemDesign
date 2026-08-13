@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Interactive visual explanations of how production systems scale.">
+  <meta name="theme-color" content="#080b0d">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SystemDesign — Learn how real systems scale">
+  <meta property="og:description" content="Interactive visual explanations of how production systems scale.">
+  <meta property="og:url" content="https://prathmesh333.github.io/SystemDesign/">
+  <link rel="canonical" href="https://prathmesh333.github.io/SystemDesign/">
+  <link rel="manifest" href="site.webmanifest">
+  <title>SystemDesign — Learn how real systems scale</title>
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="SystemDesign home"><span class="brand-mark">SD</span><span>SystemDesign</span></a>
+    <nav aria-label="Primary"><a class="active" href="index.html">Home</a><a href="#questions">Questions</a><a href="#how">How to use</a></nav>
+  </header>
+  <main>
+    <section class="home-hero grid-surface">
+      <div class="eyebrow">Interactive engineering textbook · v0.1</div>
+      <h1>Learn how real<br>systems <span>scale.</span></h1>
+      <p>Visual explanations of production systems—from the first request to millions of users. Build each architecture one constraint at a time.</p>
+      <a class="button primary" href="questions/ml-at-scale.html">Start Question 01 <span>→</span></a>
+      <div class="hero-terminal" aria-label="Learning path">
+        <span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-dot"></span>
+        <code><b>$</b> design --from naive --to production<br><i>01</i> define constraints<br><i>02</i> expose bottlenecks<br><i>03</i> add only what solves them<br><em>ready_</em></code>
+      </div>
+    </section>
+
+    <section id="questions" class="home-section">
+      <div class="section-heading"><div><span class="section-index">01 / COLLECTION</span><h2>Popular System Design Questions</h2></div><p>7 complete lessons · 54 component deep dives</p></div>
+      <article class="question-row">
+        <div class="question-number">01</div>
+        <div class="question-copy"><div class="status"><span></span> Available</div><h3>Machine Learning at Scale</h3><p>How does one trained model serve thousands or millions of users reliably?</p><div class="tags"><span>ML Systems</span><span>Intermediate</span><span>~35 min</span></div></div>
+        <div class="question-path" aria-hidden="true"><span>User</span><b>→</b><span>API</span><b>→</b><span>Model</span><b>→</b><span>Scale</span></div>
+        <a class="button secondary" href="questions/ml-at-scale.html">Explore system →</a>
+      </article>
+    </section>
+
++    <section class="home-section question-continuation">
+    <article class="question-row">
+      <div class="question-number">02</div>
+      <div class="question-copy"><div class="status"><span></span> Available</div><h3>URL Shortener</h3><p>How do durable short links redirect billions of reads in milliseconds?</p><div class="tags"><span>Backend Systems</span><span>Intermediate</span><span>~30 min</span></div></div>
+      <div class="question-path" aria-hidden="true"><span>Code</span><b>→</b><span>Cache</span><b>→</b><span>Shard</span><b>→</b><span>Redirect</span></div>
+      <a class="button secondary" href="questions/url-shortener.html">Explore system →</a>
+    </article>
+    <article class="question-row">
+      <div class="question-number">03</div>
+      <div class="question-copy"><div class="status"><span></span> Available</div><h3>YouTube</h3><p>How do uploads become adaptive streams delivered around the world?</p><div class="tags"><span>Media Systems</span><span>Advanced</span><span>~40 min</span></div></div>
+      <div class="question-path" aria-hidden="true"><span>Upload</span><b>→</b><span>Encode</span><b>→</b><span>CDN</span><b>→</b><span>Player</span></div>
+      <a class="button secondary" href="questions/youtube.html">Explore system →</a>
+    </article>
+    <article class="question-row">
+      <div class="question-number">04</div>
+      <div class="question-copy"><div class="status"><span></span> Available</div><h3>WhatsApp</h3><p>How do messages stay ordered, encrypted, and deliver after reconnect?</p><div class="tags"><span>Messaging</span><span>Advanced</span><span>~40 min</span></div></div>
+      <div class="question-path" aria-hidden="true"><span>Socket</span><b>→</b><span>Log</span><b>→</b><span>Inbox</span><b>→</b><span>Device</span></div>
+      <a class="button secondary" href="questions/whatsapp.html">Explore system →</a>
+    </article>
+    <article class="question-row">
+      <div class="question-number">05</div>
+      <div class="question-copy"><div class="status"><span></span> Available</div><h3>Netflix</h3><p>How does protected video start quickly from an ISP edge?</p><div class="tags"><span>Streaming</span><span>Advanced</span><span>~35 min</span></div></div>
+      <div class="question-path" aria-hidden="true"><span>Rights</span><b>→</b><span>DRM</span><b>→</b><span>Edge</span><b>→</b><span>Player</span></div>
+      <a class="button secondary" href="questions/netflix.html">Explore system →</a>
+    </article>
+    <article class="question-row">
+      <div class="question-number">06</div>
+      <div class="question-copy"><div class="status"><span></span> Available</div><h3>Uber Nearby Drivers</h3><p>How is rapidly changing driver supply searched and reserved safely?</p><div class="tags"><span>Geo Systems</span><span>Advanced</span><span>~35 min</span></div></div>
+      <div class="question-path" aria-hidden="true"><span>GPS</span><b>→</b><span>Cells</span><b>→</b><span>ETA</span><b>→</b><span>Dispatch</span></div>
+      <a class="button secondary" href="questions/uber-nearby.html">Explore system →</a>
+    </article>
+    <article class="question-row">
+      <div class="question-number">07</div>
+      <div class="question-copy"><div class="status"><span></span> Available</div><h3>Web Search Engine</h3><p>How does crawl data become ranked results in under a second?</p><div class="tags"><span>Search</span><span>Expert</span><span>~45 min</span></div></div>
+      <div class="question-path" aria-hidden="true"><span>Crawl</span><b>→</b><span>Index</span><b>→</b><span>Rank</span><b>→</b><span>Results</span></div>
+      <a class="button secondary" href="questions/google-search.html">Explore system →</a>
+    </article>
+    </section>
+
+    <section id="how" class="method-section">
+      <div><span class="section-index">METHOD</span><h2>Don’t memorize the diagram.<br>Build the reasoning.</h2></div>
+      <ol><li><b>01</b><span>Start naive</span><small>Find the simplest system that works.</small></li><li><b>02</b><span>Apply pressure</span><small>Increase traffic and expose failure.</small></li><li><b>03</b><span>Add a component</span><small>Understand the problem it solves.</small></li><li><b>04</b><span>Test the design</span><small>Simulate load, failure, and recovery.</small></li></ol>
+    </section>
+  </main>
+  <footer><span>SystemDesign</span><span>7 detailed questions · More systems added over time</span></footer>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
